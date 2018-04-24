@@ -13,9 +13,12 @@ you can also put in other parts folder, BUT ONLY PARTS FOLDERS!
 <br>
 
 ## ChangeLog:
- 
 <br>
 
+## --version_3.2-- cfg_editor_v3.2.sh
+ added no cfg file exit
+
+ 
 ## --version 3.1-- cfg_editor_v3.1
   first public release
 <br>

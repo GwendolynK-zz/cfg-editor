@@ -2,9 +2,9 @@
 
 # date code 1751
 # date December 7, 2017
-# updated on 1814
-# date April 4, 2018
-# version 3.1
+# updated on 1817
+# date April 24, 2018
+# version 3.2
 
 echo
 echo "WARNING this will add self destruct line to every .cfg file in its directory"
@@ -22,6 +22,11 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 	max_files=$( find . | grep '.cfg$' | cut -c3- | sort | wc -l )
 	# give some time to make it feel like its good quality :)
 	sleep 2s
+	if [[ "$max_files" -eq "0" ]]; then 
+		echo 
+		echo "theres no .cfg files to edit. make sure this is in your parts folder"
+		exit
+	fi
 	find . | grep '.cfg$' | cut -c3- | sort
 	echo
 	echo "$max_files files"
@@ -79,6 +84,9 @@ fi
 #
 # ChangeLog:
 #
+
+# --version_3.2-- cfg_editor_v3.2.sh
+# added no cfg file exit
 
 # --version_3.1-- cfg_editor_v3.1.sh
 #  first public release
