@@ -17,7 +17,7 @@ read input1
 if [[ $input1 == "y" || $input1 == "Y" ]]; then
 
 	echo "Loading..."
-	# sorry, its a verry cheap way of doing this, but it works :)
+	# its a verry cheap way of doing this, but it works :)
 	file_counter=1
 	max_files=$( find . | grep '.cfg$' | cut -c3- | sort | wc -l )
 	# give some time to make it feel like its good quality :)
@@ -54,7 +54,7 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
   }
 
   " >> $file_location
-  # you can modify this as you need, eg "canStage = true" insted of false
+  # you can modify this as you need, eg. "canStage = true" insted of false
   		((file_counter ++))
 		else
 			echo "  ^already has module"
@@ -74,4 +74,17 @@ else
 	echo "your loss"
 	exit
 fi
+
+
+#
+# ChangeLog:
+#
+
+# --version_3.1-- cfg_editor_v3.1.sh
+#  first public release
+
+
+
+# End ChangeLog
+
 
