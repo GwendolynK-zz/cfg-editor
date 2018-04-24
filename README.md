@@ -7,6 +7,7 @@ easy to run shell script for editing .cfg files for KSP
 copy the cfg_editor to your parts folder **your_KSP_game/Gamedata/squad/Parts/cfg_editor_vX.X**
 you can also put in other parts folder, BUT ONLY PARTS FOLDERS!
 once it is in a parts folder, just run it!
+it seems simple
 
 
 
