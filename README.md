@@ -21,13 +21,16 @@ it seems simple
 ### --version_3.3-- cfg_editor_v3.3.sh
   now detects where it is and wont run if its not in a parts folder
 <br>
+<br>
 
 ### --version_3.2-- cfg_editor_v3.2.sh
   added no cfg file exit
 <br>
+<br>
  
 ### --version 3.1-- cfg_editor_v3.1
   first public release
+<br>
 <br>
 
 
