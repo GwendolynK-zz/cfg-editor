@@ -1,27 +1,28 @@
 # what is cfg_editor?
-cfg_editor edits cfg files in your parts folder. <br>
+cfg_editor edits cfg files in your parts folder <br>
 it is design to add self destruct module in cfg files, this is only helpfull is you have tac-self-destruct <br>
-**this is not a mod! you put it in your Parts folder and run it onces.** <br>
+**this is not a mod! you put it in your Parts folder and run it onces** <br>
 <br>
 
 ## How To Install:
 copy the cfg_editor to your parts folder **your_KSP_game/Gamedata/squad/Parts/cfg_editor_vX.X** <br>
 you can also put in other parts folder, BUT ONLY PARTS FOLDERS! <br>
-once it is in a parts folder, just run it! it seems simple
+once it is in a parts folder, just run it! it seems simple <br>
 <br>
 
 
 ## Compatibility With: 
-script tested with: raspberry pi and mac (osx High Sierra 10.13.3) <br>
-for ksp version: as of 2018 April 24, all version of ksp should be compatibility <br>
-for Tac Self Destruct: should work for all versions <br>
+#### script tested with:
+raspberry pi and mac (osx High Sierra 10.13.3) <br>
+#### for ksp version:
+as of 2018 April 24, all version of ksp should be compatibility <br>
+#### for Tac Self Destruct:
+should work for all versions <br>
 <br>
 
 
 
 <br>
-<br>
-
 ## ChangeLog:
 <br>
 
