@@ -24,6 +24,10 @@ once it is in a parts folder, just run it! it seems simple <br>
 ## ChangeLog:
 <br>
 
+### --version_3.4-- cfg_editor_v3.4.sh
+ now removes the last bracket before adding module
+<br>
+<br>
 
 ### --version_3.3-- cfg_editor_v3.3.sh
   now detects where it is and wont run if its not in a parts folder

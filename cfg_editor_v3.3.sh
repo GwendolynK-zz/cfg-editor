@@ -4,7 +4,7 @@
 # date December 7, 2017
 # updated on 1817
 # date April 24, 2018
-# version 3.3
+# version 3.4
 
 
 # check where this script is
@@ -59,6 +59,8 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 			echo
 			if [ -z "$mod_check" ]; then
 				# echo the module to the .cfg file
+				sed -i '/^$/d' testfile.cfg 
+				sed '$d' testfile.cfg > 2tmp.txt
 				echo "
 	
 	MODULE {
@@ -66,6 +68,7 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 	  timeDelay = 10.0
 	  canStage = false
   }
+}
 
   " >> $file_location
   # you can modify this as you need, eg. "canStage = true" insted of false
@@ -93,6 +96,9 @@ fi
 #
 # ChangeLog:
 #
+
+# --version_3.4-- cfg_editor_v3.4.sh
+# now removes the last bracket before adding module
 
 # --version_3.3-- cfg_editor_v3.3.sh
 # now detects where it is and wont run if its not in a parts folder
