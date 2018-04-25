@@ -59,8 +59,8 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 			echo
 			if [ -z "$mod_check" ]; then
 				# echo the module to the .cfg file
-				sed -i '/^$/d' testfile.cfg 
-				sed '$d' testfile.cfg > 2tmp.txt
+				sed -i '/^$/d' $file_location
+				sed -i '$d' $file_location
 				echo "
 	
 	MODULE {
