@@ -12,7 +12,7 @@ once it is in a parts folder, just run it! it seems simple <br>
 
 
 ## Compatibility With: 
-**script tested with:** raspberry pi and mac (osx High Sierra 10.13.3) <br>
+**script tested with:** raspberry pi and NOT mac (osx High Sierra 10.13.3) <br>
 **for ksp version:** as of 2018 April 24, all version of ksp should be compatibility <br>
 **for Tac Self Destruct:** should work for all versions <br>
 <br>
