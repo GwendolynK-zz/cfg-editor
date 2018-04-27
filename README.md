@@ -23,7 +23,7 @@ once it is in a parts folder, just run it! it seems simple <br>
 <br>
 
 
-##Note:
+## Note:
 the osx script does not have a ChangeLog right now <br>
 <br>
 
