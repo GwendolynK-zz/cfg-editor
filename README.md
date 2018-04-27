@@ -25,7 +25,7 @@ once it is in a parts folder, just run it! it seems simple <br>
 <br>
 
 ### --version_3.5-- cfg_editor_v3.5.sh
- commets the last bracket and then adds the module
+ commets the last bracket and then adds the module <br>
  better than the previous version
 <br>
 <br>
