@@ -13,8 +13,8 @@ once it is in a parts folder, just run it! it seems simple <br>
 
 ## Compatibility With: 
 **script tested with:** raspberry pi and Linux systems (NOT OSX YET) <br>
-**for ksp version:** as of 2018 April 24, all version of ksp should be compatibility <br>
-**for Tac Self Destruct:** should work for all versions <br>
+**for ksp version:** should work for all version of ksp <br>
+**for Tac Self Destruct:** should work for all versions of Tac Self Destruct <br>
 <br>
 
 
@@ -22,6 +22,12 @@ once it is in a parts folder, just run it! it seems simple <br>
 <br>
 
 ## ChangeLog:
+<br>
+
+### --version_3.5-- cfg_editor_v3.5.sh
+ commets the last bracket and then adds the module
+ better than the previous version
+<br>
 <br>
 
 ### --version_3.4-- cfg_editor_v3.4.sh

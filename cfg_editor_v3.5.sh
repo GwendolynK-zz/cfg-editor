@@ -1,17 +1,19 @@
 #!/bin/bash
 
-# date code 1751
-# date December 7, 2017
+# created by Westley
+# email westley@sylabs.io
+# date code starded 1751
+# date sterded December 7, 2017
 # updated on 1817
-# date April 24, 2018
-# version 3.4
+# date April 27, 2018
+# version 3.5
 
 
 # check where this script is
 where=$( pwd | rev | cut -c1-5 | rev )
 if [ "${where/arts}" = "$where" ]; then
 	echo "this should be in your parts folder"
-	exit
+#	exit
 fi
 
 
@@ -58,9 +60,11 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 			echo $file_location
 			echo
 			if [ -z "$mod_check" ]; then
-				# echo the module to the .cfg file
-				sed -i '/^$/d' $file_location
-				sed -i '$d' $file_location
+				# open the last bracket
+				tac $file_location > cfg_file.txt
+				sed -i '0,/\}/s//\/\/\}/' cfg_file.txt
+				tac cfg_file.txt > $file_location
+				# then echo the module to the file, notice the extra bracket
 				echo "
 	
 	MODULE {
@@ -81,6 +85,7 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 	done
 
 	echo
+	rm cfg_file.txt
 	echo "done"
 else 
 	echo "okay"
@@ -96,6 +101,10 @@ fi
 #
 # ChangeLog:
 #
+
+# --version_3.5-- cfg_editor_v3.5.sh
+# commets the last bracket and then adds the module
+# better than the previous version
 
 # --version_3.4-- cfg_editor_v3.4.sh
 # now removes the last bracket before adding module
