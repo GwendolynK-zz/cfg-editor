@@ -1,19 +1,20 @@
 #!/bin/bash
 
+# https://github.com/WestleyK/cfg_editor
 # created by Westley
 # email westley@sylabs.io
 # date code starded 1751
 # date sterded December 7, 2017
 # updated on 1817
 # date April 27, 2018
-# version 3.5
+# version 3.6
 
 
 # check where this script is
 where=$( pwd | rev | cut -c1-5 | rev )
 if [ "${where/arts}" = "$where" ]; then
 	echo "this should be in your parts folder"
-	exit
+#	exit
 fi
 
 
@@ -61,13 +62,12 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 			echo
 			if [ -z "$mod_check" ]; then
 				# open the last bracket
-				tail -r $file_location > cfg_file.txt
-				#sed -i '0,/\}/s//\/\/\}/' cfg_file.txt
-				sed -i .bak 's/\}/\/\/\}/' cfg_file.txt
-				tail -r cfg_file.txt > $file_location
+				tac $file_location > cfg_file.txt
+				sed -i '0,/\}/s//\/\/\}/' cfg_file.txt
+				tac cfg_file.txt > $file_location
 				# then echo the module to the file, notice the extra bracket
 				echo "
-    }	
+	
 	MODULE {
 	  name = TacSelfDestruct
 	  timeDelay = 10.0
@@ -87,7 +87,6 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 
 	echo
 	rm cfg_file.txt
-	rm cfg_file.txt.bak
 	echo "done"
 else 
 	echo "okay"
@@ -98,30 +97,5 @@ else
 	echo "your loss"
 	exit
 fi
-
-
-#
-# ChangeLog:
-#
-
-# --version_3.5-- cfg_editor_v3.5.sh
-# commets the last bracket and then adds the module
-# better than the previous version
-
-# --version_3.4-- cfg_editor_v3.4.sh
-# now removes the last bracket before adding module
-
-# --version_3.3-- cfg_editor_v3.3.sh
-# now detects where it is and wont run if its not in a parts folder
-
-# --version_3.2-- cfg_editor_v3.2.sh
-# added no cfg file exit
-
-# --version_3.1-- cfg_editor_v3.1.sh
-#  first public release
-
-
-
-# End ChangeLog
 
 
