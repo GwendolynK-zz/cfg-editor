@@ -3,8 +3,8 @@
 # https://github.com/WestleyK/cfg_editor
 # created by Westley
 # email westley@sylabs.io
-# date code starded 1815
-# date started April 27, 2018
+# date code starded 1751
+# date started December 7, 2017
 # updated on 1816
 # date May 3, 2018
 # version 3.6
@@ -14,6 +14,7 @@
 where=$( pwd | rev | cut -c1-5 | rev )
 if [ "${where/arts}" = "$where" ]; then
 	echo "this should be in your parts folder"
+	# you can commit the "exit" if your not running in your parts folder
 	exit
 fi
 
@@ -29,7 +30,7 @@ read input1
 if [[ $input1 == "y" || $input1 == "Y" ]]; then
 
 	echo "Loading..."
-	# its a very cheap way of doing this, but it works :)
+	# its a very cheap way of doing this, but it works
 	file_counter=1
 	max_files=$( find . | grep '.cfg$' | cut -c3- | sort | wc -l )
 	# give some time to make it feel like its good quality :)
@@ -65,7 +66,7 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 				awk '/./' $file_location > cfg_file.txt
 				cfg_file="1"
 				# then cut the last line with the bracket
-				sed  '$ d' cfg_file.txt > $file_location
+				sed '$ d' cfg_file.txt > $file_location
 				# then echo the module to the file, notice the extra bracket
 				echo "
 	MODULE {
