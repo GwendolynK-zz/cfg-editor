@@ -4,7 +4,7 @@
 # created by Westley
 # email westley@sylabs.io
 # date code starded 1815
-# date sterded April 27, 2018
+# date started April 27, 2018
 # updated on 1816
 # date May 3, 2018
 # version 1.1
@@ -29,7 +29,7 @@ read input1
 if [[ $input1 == "y" || $input1 == "Y" ]]; then
 
 	echo "Loading..."
-	# its a verry cheap way of doing this, but it works :)
+	# its a very cheap way of doing this, but it works :)
 	file_counter=1
 	max_files=$( find . | grep '.cfg$' | cut -c3- | sort | wc -l )
 	# give some time to make it feel like its good quality :)
