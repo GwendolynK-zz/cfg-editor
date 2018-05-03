@@ -1,5 +1,5 @@
 # what is cfg_editor?
-cfg_editor edits cfg files in your parts folder <br>
+cfg_editor adds modules to .cfg files <br>
 it is design to add self destruct module in cfg files, this is only helpfull is you have tac-self-destruct <br>
 **this is not a mod! you put it in your Parts folder and run it onces** <br>
 <br>
@@ -12,6 +12,7 @@ copy the cfg_editor to your parts folder **your_KSP_game/Gamedata/squad/Parts/cf
 <br>
 you can also put in other parts folder, BUT ONLY PARTS FOLDERS! <br>
 once it is in a parts folder, just run it! it seems simple <br>
+you can run it more than once, it will only add module to cfg files that dont already have it! <br>
 <br>
 
 
