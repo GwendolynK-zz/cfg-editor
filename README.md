@@ -8,7 +8,7 @@ it is design to add self destruct module in cfg files, this is only helpfull is 
 <br>
 
 ## How To Install:
-copy the cfg_editor to your parts folder **your_KSP_game/Gamedata/squad/Parts/cfg_editor_vX.X.sh** <br>
+copy the cfg_editor to your parts folder **your_KSP_game/Gamedata/squad/Parts/cfg_editor.sh** <br>
 <br>
 you can also put in other parts folder, BUT ONLY PARTS FOLDERS! <br>
 once it is in a parts folder, just run it! it seems simple <br>
