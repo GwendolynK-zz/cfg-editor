@@ -7,7 +7,7 @@
 # date started April 27, 2018
 # updated on 1816
 # date May 3, 2018
-# version 1.1
+# version 3.6
 
 
 # check where this script is
