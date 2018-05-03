@@ -10,10 +10,6 @@ it is design to add self destruct module in cfg files, this is only helpfull is 
 ## How To Install:
 copy the cfg_editor to your parts folder **your_KSP_game/Gamedata/squad/Parts/cfg_editor_vX.X.sh** <br>
 <br>
-**if your running on a mac, you have to use cfg_editor_osx_vX.X.sh** <br>
-**ONLY RUN THE OSX SCRIPT ON MAC, OR YOU WILL BREAK YOUR CONFIG FILES!!!** <br>
-<br>
-**if your running linux like system, then use the cfg_editor_vX.X.sh** <br>
 you can also put in other parts folder, BUT ONLY PARTS FOLDERS! <br>
 once it is in a parts folder, just run it! it seems simple <br>
 <br>

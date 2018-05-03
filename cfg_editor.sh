@@ -3,18 +3,18 @@
 # https://github.com/WestleyK/cfg_editor
 # created by Westley
 # email westley@sylabs.io
-# date code starded 1751
-# date sterded December 7, 2017
-# updated on 1817
-# date April 27, 2018
-# version 3.6
+# date code starded 1815
+# date sterded April 27, 2018
+# updated on 1816
+# date May 3, 2018
+# version 1.1
 
 
 # check where this script is
 where=$( pwd | rev | cut -c1-5 | rev )
 if [ "${where/arts}" = "$where" ]; then
 	echo "this should be in your parts folder"
-#	exit
+	exit
 fi
 
 
@@ -61,13 +61,13 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 			echo $file_location
 			echo
 			if [ -z "$mod_check" ]; then
-				# open the last bracket
-				tac $file_location > cfg_file.txt
-				sed -i '0,/\}/s//\/\/\}/' cfg_file.txt
-				tac cfg_file.txt > $file_location
+				# clean the extra lines
+				awk '/./' $file_location > cfg_file.txt
+				cfg_file="1"
+				# then cut the last line with the bracket
+				sed  '$ d' cfg_file.txt > $file_location
 				# then echo the module to the file, notice the extra bracket
 				echo "
-	
 	MODULE {
 	  name = TacSelfDestruct
 	  timeDelay = 10.0
@@ -86,7 +86,10 @@ if [[ $input1 == "y" || $input1 == "Y" ]]; then
 	done
 
 	echo
-	rm cfg_file.txt
+	# make sure we only remove the file if its there
+	if [[ $cfg_file = "1" ]]; then
+		rm cfg_file.txt
+	fi
 	echo "done"
 else 
 	echo "okay"
