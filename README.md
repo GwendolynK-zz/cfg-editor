@@ -21,4 +21,3 @@ once it is in a parts folder, just run it! it seems simple <br>
 **for Tac Self Destruct:** should work for all versions of Tac Self Destruct <br>
 <br>
 
-
