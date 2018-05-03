@@ -2,7 +2,6 @@
 
 # https://github.com/WestleyK/cfg_editor
 # created by Westley
-# email westley@sylabs.io
 # date code starded 1751
 # date started December 7, 2017
 # updated on 1816
