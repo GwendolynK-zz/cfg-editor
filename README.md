@@ -6,10 +6,6 @@ it is design to add self destruct module in cfg files, this is only helpfull is 
 
 
 <br>
-## osx script is still not working, DO NOT RUN IT!
-<br>
-
-<br>
 
 ## How To Install:
 copy the cfg_editor to your parts folder **your_KSP_game/Gamedata/squad/Parts/cfg_editor_vX.X.sh** <br>
