@@ -4,6 +4,8 @@ it is design to add self destruct module in cfg files, this is only helpfull is 
 **this is not a mod! you put it in your Parts folder and run it onces** <br>
 <br>
 
+## still not working! just wait
+while the script sorta works, theres still some bugs
 
 <br>
 
